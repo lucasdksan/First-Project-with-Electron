@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./public/styles/styles.css">
+        <script src="./public/scripts/script.js"></script>
+        <title>First Project with Electron</title>
+    </head>
+    <body>
+        <div class="intro">
+            <h1>Primeiro Projeto com electron!</h1>
+            <p>
+            We are using node <script>document.write(process.versions.node)</script>,
+            Chrome <script>document.write(process.versions.chrome)</script>,
+            and Electron <script>document.write(process.versions.electron)</script>.
+            </p>
+            <h3>Meu primeiro app feito em Electron, usando só HTML, CSS e JS</h3>
+        </div>
+        <div class="card__todo">
+            <h2>O que vou fazer hoje?</h2>
+            <input type="text" onkeyup="addNewTodo(event)"  id="inputTodo" placeholder="Escreva sua atividade...">
+            <span onclick="addNewTodo()" class="btn__add">ADD</span>
+        </div>
+        <ul id="ulTodo"></ul>
+    </body>
+</html>
